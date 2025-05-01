@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacione seu Carro</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Tabela de tempo de estacionamento</h2>
+            <table>
+                <tr>
+                    <td>Valor</td>
+                    <td>Tempo</td>
+                </tr>
+                <tr>
+                    <td>R$ 1,00</td>
+                    <td>30 minutos</td>
+                </tr>
+                <tr>
+                    <td>R$ 1,75</td>
+                    <td>60 minutos</td>
+                </tr>
+                <tr>
+                    <td>R$ 3,00</td>
+                    <td>120 minutos (tempo maximo permitido)</td>
+                </tr>
+            </table>
+    </header>
+    <main>
+        
+        <section>
+            <label for="Valor">Valor:</label>
+            <input type="number" id="Valor" Nome="Valor">
+
+            <button onclick="Resultado.Calcular()">Confirmar</button>
+        </section>
+
+        <section>
+            <p id="MostarResultado"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
